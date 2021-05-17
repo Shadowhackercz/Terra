@@ -1,0 +1,122 @@
+enable:
+  - "Pokud se vám líbí Terra, můžete mě podpořit na Patreon!"
+  - "Získáte přístup k experimentálním funkcím, než jsou dostupné!"
+  - "Podpořte projekt zde: https://www.patreon.com/dfsek"
+disable:
+  - "Děkujeme za použití Terra!"
+command:
+  debug-only: "Tento příkaz musí být použit se zapnutým debug modem!"
+  player-only: "Tento příkaz je pouze pro hráče!"
+  invalid: "Nesprávný příkaz. (Očekáváno %1$s argumentů, nalezeno %2$s)."
+  players-only: "Příkaz je pouze pro hráče."
+  world: "Tento příkaz musí být spuštěn v Terra světě!!"
+  reload: "Obnoven Terra konfig."
+  reload-error: "Nastaly chyby při reloading Terra konfigurace. Podívejte se do logů pro více informací."
+  version: "Na tomto serveru běží Terra verze \"%1$s\", na platformě \"%2$s\""
+  main-menu:
+    - "--------------------Terra--------------------"
+    - "reload    - Obnoví konfigurační data"
+    - "biome     - Ukáže aktuální biom"
+    - "ore       - Generuje žílu rud v lokaci, ve směru kam koukáte (Pro debugging)"
+    - "save-data - Uložit populační data"
+    - "structure - Nahrát a exportovat struktury"
+    - "profile   - Profiler možnosti"
+    - "image     - Obrázkové/GUI možnosti"
+  biome:
+    biome-found: "Lokalizován biom na (%1$s, %2$s)"
+    unable-to-locate: "Nelze lokalizovat biom."
+    invalid-radius: "Nesprávný radius: \"%s\""
+    invalid: "Nesprávné ID biomu: \"%s\""
+    in: "Jste v \"%s\""
+  packs:
+    main: "Aktuálně instalované konfiguračí balíčky:"
+    pack: " - %1$s v%3$s od %2$s"
+    none: "Žádné konfigurační balíčky nejsou nainstalovány."
+  ore:
+    main-menu:
+      - "---------------Terra/ore---------------"
+      - "Generuje žílu rud v bloku na který koukáte."
+    out-of-range: "Blok mimo dosah"
+    invalid-ore: "Nelze nalézt Rudu \"%s\""
+  geometry:
+    main-menu:
+      - "---------------Terra/geometry----------------"
+      - "Různé voxel geometrické debugging příkazy"
+      - "sphere       - Generovat kouli"
+      - "deformsphere - Generovat deformovanou kouli"
+      - "tube         - Generovat válec"
+    deform:
+      invalid-radius: "Nesprávný radius: \"%s\""
+      invalid-deform: "Nesprávná deformace: \"%s\""
+      invalid-frequency: "Nesprávná frekvence: \"%s\""
+    sphere:
+      invalid-radius: "Nesprávný radius: \"%s\""
+    tube:
+      invalid-radius: "Nesprávný radius: \"%s\""
+  image:
+    main-menu:
+      - "---------------Terra/image---------------"
+      - "render - Renderuje obrázek s danou šířkou a výškou, který může být později importován jako svět."
+      - "gui    - Otevřít Debug GUI (Musí být zapnuto v konfig)"
+    gui:
+      main-menu:
+        - "-------------Terra/image/gui-------------"
+        - "raw  - Otevře GUI s raw Biom daty"
+        - "step - Re-render dat k ukázání borderu přehledněji"
+      debug: "Debug mod musí být zapnutý v konfigu k použití debug GUI! Debug GUI NENÍ PRODUKČNĚ BEZPEČNÉ!"
+    render:
+      save: "Uložen obrázek jako \"%s\""
+      error: "Nastala chyba při generaci obrázku!"
+  profile:
+    main-menu:
+      - "---------------Terra/profile---------------"
+      - "start - Zapne profiler"
+      - "stop  - Vypne profiler"
+      - "query - Ukáže profiler data"
+      - "reset - Resetuje profiler data"
+    reset: "Profiler byl resetován."
+    start: "Profiler byl spuštěn."
+    stop: "Profiler byl vypnut."
+  structure:
+    main-menu:
+      - "---------------Terra/structure---------------"
+      - "export - Export označené zony WorldEditu jako Terra struktura."
+      - "load   - Nahrát Terra strukturu"
+    invalid-radius: "Nesprávný radius: \"%s\""
+    invalid-rotation: "Nesprávná rotace: \"%s\""
+    invalid: "Nesprávné ID struktury: \"%s\""
+    export: "Uložena struktura do \"%s\""
+world-config:
+  load: "Načítání konfiguračních hodnost světa pro svět \"%s\"..."
+  not-found: "Konfigurace pro svět \"%s\" nenalezena. Kopírují defaultní konfig."
+  using-image: "Načítání světa z obrázku."
+  error: "Nelze načíst konfigurace pro svět %s"
+  done: "Načítání světa pro svět \"%1$s\" kompletní. Uplynulá doba: %2$sms"
+config-pack:
+  loaded: "Konfigurační balíček %1$s v%4$s od %3$s načten za %2$sms."
+config:
+  loaded: "Načten %1$s ze souboru %2$s"
+  loaded-all: "Načten %1$s %2$s za %3$sms."
+  error:
+    invalid-failover: "Nesprávný typ failover: \"%s\""
+    duplicate: "Duplikační ID nalezeno v souboru: %s"
+    file:
+      - "Konfigurační chyba pro Terra objekt. Soubor: %1$s"
+      - "%2$s"
+      - "Opravte jej před pokračováním!"
+    generic:
+      - "Nastala chyba při načítání konfigurace."
+      - "Prosíme nahlašte to Terra."
+warning:
+  no-population: "Žádné chunky s populací nebyly načteny. Pokud je tohle první zapnutí s Terra, či tvoříte nový svět, je to normální chování."
+error:
+  severe-config: "Vážná konfigurační chyba zabránila Terra, aby vygenerovala terén na koordinátech: %1$s, %2$s. Zkontrolujte prosím vaši konfiguraci kvůli chybám. Jakékoli konfigurační chyby budou nahlášeny výše."
+debug:
+  data-save : "Uložena populační data."
+use-paper:
+  - "Vypadá to, že  používáte Spigot/CraftBukkit."
+  - "Ačkoli Terra &ofunguje&r na Spigot, některá funkce jsou ztraceny. (Terra je neotestována na CraftBukkit; žádná podpora nebude pro CraftBukkit)."
+  - "Pro nejvíce funkcí s Terra, použijte prosím Paper."
+  - "Navíc, Paper nabízí obrovská výkonostní vylepšení než Spigot a všechny Spigot pluginy by měli fungovat i na Paper!"
+  - "Abyste měli nejlepší zážitek s Terra a všemi pluginy, použijte prosím Paper."
+  - "Dozvědte se více informací o Paper na stránce htps://papermc.io/"
